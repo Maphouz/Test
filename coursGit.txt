@@ -1,0 +1,95 @@
+
+1selection de fichier 
+
+clear=>nettoyage du console 
+cd /d =>pour aller vers le disque D
+cd "\nomdossier"=>à partir de la rachine du c ou c pour aller vers un dossier 
+    Une fois dans ce dossier il suffit de "cd nomdossier"
+ 
+-git add filename
+
+2 commte ficher
+
+   -git commit  -m  "........commentaire......."
+
+
+3 Time line des commits(l'historique des commits)
+   -git log
+
+4 creation d'un branche  
+( cad faire de modif isolé du projet qu'on pourra apres rapatrie sur le projet initial si on veut)
+   
+  *master c'est la branche principal
+
+      - git branch  namebranche 
+  
+4.1 lister les branches
+  
+     -git branch
+
+4.2   changer de branche
+
+  -git checkout namebranche
+
+5 fusionner  une branche avec le projet principale (cad la branche master)
+  5.1 selectionner la brnache principale
+
+    -git checkout master
+
+  5.2 fusionner les commits
+      -git merge namebranche
+  
+   5.3 suppression de la branche (facultatif mais conseiller)
+
+    - git branche -d namebranche
+
+6 dépot distant (deposer le proget sur un espace partage )
+
+6.1 Association du depot distant à un dépot local (cad creation d'un pont)
+
+    git remote add origin UrlDuProjet
+
+  ex:  git remote add origin https://github.com/Maphouz/Test.git
+
+   vérification du dépot distance de notre projet: git remote
+
+6.2 deposer le projet(push)
+
+      -git push origin master  (origin label du dépot, nom de la branche à deposer )
+
+6.3 Charger un projet du gitgub vers son poste de travail
+
+       -git clone UrlDuProject 
+    
+        ex git clone https://github.com/Maphouz/Test.git
+
+
+
+
+
+
+
+
+
+  recap 
+1) create a new repository on the command line
+
+echo "# Test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Maphouz/Test.git
+git push -u origin master
+
+
+2) push an existing repository from the command line
+   
+  git remote add origin https://github.com/Maphouz/Test.git
+  git push -u origin master
+                
+
+
+
+
+
+ 
